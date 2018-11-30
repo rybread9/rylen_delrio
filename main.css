@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+body {
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  font-family: 'Abel', sans-serif;
+}
+.main{
+  width: 80%;
+}
+.main, .header, .nav{
+  display: flex;
+  flex-direction: row;
+
+}
+.header{
+  height: 200px;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+}
+.logo {
+  /* background-image: url('./images/rylenbg.png'); */
+  background-image: url('./images/rylen.png');
+  /* background-color: #007B7D; */
+  background-color: black;
+  height:200px;
+  width: 260px;
+  background-repeat: no-repeat;
+  background-position: left;
+  border-radius: 5px;
+}
+.nav{
+  background-color: black;
+  padding: 10px 40px;
+  width: 70%;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.link>a{
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 4px rgba(255, 255, 255, 0.2);
+  padding: 10px;
+}
+.link>a:hover{
+  color:#00A6A8;
+}
+.about{
+  height: 200px;
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+
+}
+/* #aboutImg{
+  height: 300px;
+  width: 80%;
+} */
