@@ -33,7 +33,7 @@ body {
   height: 64px;
   width: 64px;
 }
-.nav, .about, .link, .projects  {
+.nav, .about, .link, .projects, .skills-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -45,6 +45,7 @@ body {
   height: 30px;
   position: fixed;
   width: 100%;
+  z-index: 6;
 }
 .link {
   background-color: rgb(130, 164, 74);
@@ -64,45 +65,104 @@ body {
   font-size: 22px;
 }
 .about {
-  height: 35%;
+  height: 270px;
+  width: 100%;
   color: rgb(233, 221, 189);
-  justify-content: center;
+  /* justify-content: center; */
+  /* margin: 0 auto; */
 }
 .about-img {
-  height: 300px;
-  width: 33%;
+  height: 250px;
+  width: 27%;
   /* justify-content: center; */
   margin: 0 auto;
-  padding: 0 40px;
-  border-left: 2px solid var(--cream);
-  border-right: 2px solid var(--cream);
 }
 .about-img>img{
   height: 250px;
-  width: auto;
+  width: 100%;
   justify-content: center;
+  margin-top: 10px;
+
 }
 .about-text {
-  width: 33%;
+  width: 37%;
   line-height: 25px;
   font-family: 'Krub', sans-serif;
   text-align: center;
+  border-left: 2px solid var(--lightgreen);
+  border-right: 2px solid var(--lightgreen);
+  padding: 0 40px;
+  margin: 0 40px;
 }
 .about-text>h1{
-  /* font-family: 'Shadows Into Light', cursive; */
-  /* font-family: 'Kalam', cursive; */
   letter-spacing: 3px;
   text-align: center;
   color: rgb(233, 221, 189);
 }
 .about-contact{
-  width: 33%;
+  width: 20%;
+}
+.skills {
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 .skills-header {
   font-family: 'Josefin Sans', sans-serif;
   border-bottom: 2px solid rgb(130, 164, 74);
+  text-align: center;
+  margin: 20px 400px;
+  margin-bottom: 100px;
 }
-.skills-text {
+.skills-content {
+  justify-content: center;
+
+}
+.skill-set {
+  height: 150px;
+  width: 150px;
+  border: 2px solid var(--lightgreen);
+  background-color: var(--darkgreen);
+  color: var(--cream);
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  margin: 23px;
+  font-weight: 200;
+  z-index: 1;
+}
+.one {
+  border-radius: 7% 50%;
+  transform: rotateZ(-25deg);
+}
+.two {
+
+  border-radius: 50% 7%;
+  transform: rotateZ(25deg);
+}
+.one>.skills-text {
+  transform: rotateZ(25deg);
+}
+.two>.skills-text {
+  transform: rotateZ(-25deg);
+
+}
+#first{
+  font-size: 14px;
+  line-height: 10px;
+}
+.stem {
+  height: 150px;
+  width: 3%;
+  background-color: var(--lightgreen);
+  z-index: 2;
+}
+.flower {
+  height: 100px;
+  width: 100px;
+  border: 2px solid rgb(201, 56, 113);
+  background-color: rgb(228, 121, 185);
+  border-radius: 50%;
+  z-index: 3;
 
 }
 .project {
