@@ -3,21 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Rylen del Rio</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="main.css">
+    <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
+    <!-- JavaScript -->
     <script src="app.js" charset="utf-8"></script>
   </head>
   <body>
     <!-- header -->
     <div class="header">
-
+      <!-- nav bar -->
       <div class="nav">
+        <div id="nav-logo">
+          <img src="./images/logo.png" alt="">
+          <h2>Rylen del Rio</h2>
+        </div>
 
         <div class="link">
-          <a href="About">about</a>
+          <a href="/about.html">about</a>
         </div>
         <div class="link">
           <a href="Skills">skills</a>
@@ -37,11 +44,6 @@
 
       </div>
 
-      <div class="logo">
-        <img src="./images/logo.png" alt="">
-        <h1>Rylen del Rio</h1>
-      </div>
-
 
 
 
@@ -50,161 +52,62 @@
     <!-- main -->
     <div class="main">
 
-      <!-- Projects -->
-      <div class="projects">
-
-          <!-- Trouble -->
-        <div class="project" id="trouble">
-          <div class="project-hover" >
-            <div class="project-title">Trouble</div>
-            <div class="project-line"></div>
-            <div class="project-caption">
-              <h4>Built with:</h4>
-              <p>HTML,</br> CSS,</br> JavaScript</p></br>
-              <a class="live-site-link" target="_blank" href="#">Live Site</a> | <a class="github-link" target="_blank" href="#">GitHub</a>
-            </div>
-          </div>
-
-          <img class="project-thumbnail" src="./images/trouble.png">
+      <!-- FIRST SECTION -->
+      <div class="top">
+        <!-- LOGO -->
+        <div class="logo">
+          <img src="./images/logo.png" alt="">
+          <h1>Rylen del Rio</h1>
+          <h3>Web Developer</h3>
+          <h4>Sacramento, CA</h4>
         </div>
 
-        <!--  alpacaPost -->
-        <div class="project" id="alpacaPost">
-          <div class="project-hover">
-            <div class="project-title">alpacaPost</div>
-            <div class="project-line"></div>
-            <div class="project-caption">
-              <h4>Built with:</h4>
-              <p>HTML, CSS, MongoDB,</br> Express, EJS,  Node.js</p></br>
-              <a class="live-site-link" target="_blank" href="#">Live Site</a> | <a class="github-link" target="_blank" href="#">GitHub</a>
-            </div>
-          </div>
-
-          <img class="project-thumbnail" src="./images/alpacapost.png">
-        </div>
-
-        <!-- SciNotes -->
-        <div class="project" id="SciNotes">
-          <div class="project-hover" >
-            <div class="project-title">SciNotes</div>
-              <div class="project-line"></div>
-              <div class="project-caption">
-                <h4>Built with:</h4>
-                <p>HTML, CSS, React.js,</br> PostgreSQL, Ruby on Rails</br> </p></br>
-                <a class="live-site-link" target="_blank" href="#">Live Site</a> | <a class="github-link" target="_blank" href="#">GitHub</a>
-            </div>
-          </div>
-
-          <img class="project-thumbnail" src="./images/scinotes.png">
-        </div>
-        <!-- myPlastics -->
-        <div class="project" id="myPlastics">
-          <div class="project-hover" >
-            <div class="project-title">myPlastics</div>
-            <div class="project-line"></div>
-            <div class="project-caption">
-              <h4>Built with:</h4>
-              <p>HTML, CSS, D3, MongoDB,</br> Express, EJS,  Node.js</p></br>
-              <a class="live-site-link" target="_blank" href="#">Live Site</a> | <a class="github-link" target="_blank" href="#">GitHub</a>
-            </div>
-          </div>
-
-          <img class="project-thumbnail" src="./images/myplastics.png">
-        </div>
 
       </div>
 
-      <div class="skills">
-        <div class="skills-header">
-          <h2>Technologies I Enjoy Working With</h2>
-        </div>
-        <div class="skills-content">
+      <!-- SECOND SECTION -->
+      <div class="second">
 
-          <div id="first" class="skill-set one">
-            <h3 class="skills-text">HTML</h3>
-            <h3 class="skills-text">CSS</h3>
-            <h3 class="skills-text">SASS</h3>
-            <h3 class="skills-text">JavaScript</h3>
-            <h3 class="skills-text">Ruby</h3>
-          </div>
 
-          <div class="animate">
-            <div class="stem">
-              <div class="flower">
-
-              </div>
+          <div class="about-content">
+            <!-- SKILLS -->
+            <div class="about-skills">
+              <h3>Languages:</h3>
+              <p>JavaScript, Ruby, HTML, CSS </p>
+              <h3>Frameworks:</h3>
+              <p>React.js, Angular1, EJS </p>
+              <h3>Database:</h3>
+              <p>MongoDB, PostgreSQL, MySQL, D3</p>
+              <h3>Other:</h3>
+              <p>Git, Ruby on Rails, Express, Node.js, SASS</p>
             </div>
 
 
-          </div>
-
-
-
-          <div class="skill-set two">
-            <h3 class="skills-text">React.js</h3>
-            <h3 class="skills-text">Angular.js</h3>
-            <h3 class="skills-text">EJS</h3>
-          </div>
-
-
-
-          <div class="skill-set one">
-            <h3 class="skills-text">Ruby on Rails</h3>
-            <h3 class="skills-text">Express</h3>
-            <h3 class="skills-text">Node.js</h3>
-          </div>
-
-          <div class="animate">
-            <div class="stem">
-
-            </div>
-
-            <div class="flower">
-
+            <div class="about-img">
+              <img src="./images/ry_kang.jpg" alt="">
             </div>
           </div>
 
-
-          <div class="skill-set two">
-            <h3 class="skills-text">MongoDB</h3>
-            <h3 class="skills-text">PostgreSQL</h3>
-            <h3 class="skills-text">MySQL</h3>
-            <h3 class="skills-text">D3</h3>
-          </div>
-
-
-
-        </div>
       </div>
 
-
-
-      <div class="about">
-
-        <div class="about-img">
-          <img src="./images/ry_kang.jpg" alt="">
-        </div>
-
-        <div class="about-text">
-
-          <p>Hey, I'm Rylen. I build websites and have a background in the natural sciences. I like to use my programming powers for good by inspiring others to value themselves and the planet they call home. My problem-solving strategy and web development skills are driven by my passion for sustainable solutions for our future.</br>
+      <div class="third">
+        <!-- PERSONAL -->
+        <div class="about-personal">
+          <p>Hey there, I'm Rylen(left in photo), a web developer based in Sacramento, California. In my personal projects, I like to combine my natural science background and my web development skills to build websites and apps for the conservation and scientist communities. Professionally, I love to collaborate and am always looking for new opportunities to learn from others. Let's work on something together! Drop me a line. </br>
           </p>
-
         </div>
 
-
-
+        <!-- CONTACT-->
         <div class="about-contact">
           <h3>Let's Connect!</h3>
+          </br>
           <p> rylen.delrio@gmail.com </p>
+          </br>
           <a href="https://github.com/rybread9"> GitHub </a></br>
-        </br>
+          </br>
           <a href="https://www.linkedin.com/in/rylendelrio/"> LinkedIn </a>
         </div>
-
-
       </div>
-
 
     </div>
     <!-- footer -->

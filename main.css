@@ -4,40 +4,60 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:200');
 
+@import url('https://fonts.googleapis.com/css?family=Assistant:200,300,400');
+
 :root {
   --lightgreen: rgb(130, 164, 74);
   --cream: rgb(233, 221, 189);
   --darkgreen: rgb(45, 69, 40);
 }
+*{
+  margin: 0 auto;
 
+}
 body {
-  font-family: 'Cabin', sans-serif;
+  /* font-family: 'Cabin', sans-serif; */
+  font-family: 'Assistant', sans-serif;
+  font-weight: 200;
   margin: 0 auto;
   font-size: 20px;
-  color: rgb(45, 69, 40);
+  color: var(--cream);
   background-color: black;
 }
 .main {
+  padding-top: 50px;
+}
+h3 {
+  color: var(--lightgreen);
+}
+a {
+  color: var(--cream);
+}
+/*----- FLEX COLUMNS ----- */
+.main, .logo, .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+/*----- FLEX ROWS -----*/
+.nav, #nav-logo, .link, .top, .second, .third, .about-content, .projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*----- LANDING PAGE LOGO -----*/
 .logo{
   text-align: center;
   color: rgb(233, 221, 189);
   font-family: 'Montserrat Alternates', sans-serif;
   letter-spacing: 5px;
-  padding-top: 60px;
 }
 .logo>img{
   height: 64px;
   width: 64px;
+  align-self: center;
 }
-.nav, .about, .link, .projects, .skills-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+/*----- NAV BAR -----*/
 .nav {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0 auto;
@@ -48,7 +68,7 @@ body {
   z-index: 6;
 }
 .link {
-  background-color: rgb(130, 164, 74);
+  background-color: var(--lightgreen);
   height: 30px;
   width: 25%;
   text-align: center;
@@ -57,113 +77,93 @@ body {
   letter-spacing: 3px;
 }
 .link:hover{
-  background-color: rgb(45, 69, 40);
+  background-color: var(--darkgreen);
 }
 .link>a{
   text-decoration: none;
-  color: rgb(233, 221, 189);
+  color: var(--cream);
   font-size: 22px;
+}
+#nav-logo{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 22px;
+  color: var(--cream);
+  width: 40%;
+}
+#nav-logo>img{
+  height: 40px;
+  width: 40px;
+  /* margin-left: 20px; */
+}
+/*----- ABOUT PAGE -----*/
+.top {
+  height: 35%;
+  width: 100%;
+  margin: 40px 0;
+}
+.second{
+  padding: 30px;
+}
+.third{
+  padding: 30px;
+  background-color: rgb(28, 31, 29);
 }
 .about {
   height: 270px;
   width: 100%;
-  color: rgb(233, 221, 189);
-  /* justify-content: center; */
-  /* margin: 0 auto; */
+  padding-top: 60px;
+}
+.about-header{
+  text-align: center;
+  border-bottom: 1px solid var(--lightgreen);
+  margin-bottom: 20px;
+
+}
+.about-skills, .about-img {
+  height: 45%;
+  width: 50%;
+  padding: 15px;
+}
+.about-skills>p{
+  color: var(--cream);
 }
 .about-img {
-  height: 250px;
-  width: 27%;
+  /* height: 250px; */
+  height: 20vw;
+  width: 27vw;
   /* justify-content: center; */
   margin: 0 auto;
 }
 .about-img>img{
-  height: 250px;
+  height: 100%;
   width: 100%;
   justify-content: center;
-  margin-top: 10px;
-
+  border-radius: 4%;
 }
-.about-text {
-  width: 37%;
-  line-height: 25px;
-  font-family: 'Krub', sans-serif;
-  text-align: center;
-  border-left: 2px solid var(--lightgreen);
-  border-right: 2px solid var(--lightgreen);
-  padding: 0 40px;
-  margin: 0 40px;
-}
-.about-text>h1{
-  letter-spacing: 3px;
-  text-align: center;
-  color: rgb(233, 221, 189);
+.about-personal {
+  color: var(--cream);
+  line-height: 27px;
+  font-size: 24px;
+  width: 50%;
+  border-right: 1px solid var(--lightgreen);
+  padding-right: 20px;
+  /* text-align: center; */
 }
 .about-contact{
-  width: 20%;
-}
-.skills {
-  margin-top: 80px;
-  margin-bottom: 100px;
-}
-.skills-header {
-  font-family: 'Josefin Sans', sans-serif;
-  border-bottom: 2px solid rgb(130, 164, 74);
+  width: 50%;
   text-align: center;
-  margin: 20px 400px;
-  margin-bottom: 100px;
-}
-.skills-content {
-  justify-content: center;
+  font-size: 24px;
 
 }
-.skill-set {
-  height: 150px;
-  width: 150px;
-  border: 2px solid var(--lightgreen);
-  background-color: var(--darkgreen);
-  color: var(--cream);
-  font-size: 14px;
+/*----- PROJECTS PAGE -----*/
+.projects-header{
   text-align: center;
-  justify-content: center;
-  margin: 23px;
-  font-weight: 200;
-  z-index: 1;
+  border-bottom: 1px solid rgb(130, 164, 74);
+  margin-bottom: 20px;
+  padding-top: 60px;
 }
-.one {
-  border-radius: 7% 50%;
-  transform: rotateZ(-25deg);
-}
-.two {
-
-  border-radius: 50% 7%;
-  transform: rotateZ(25deg);
-}
-.one>.skills-text {
-  transform: rotateZ(25deg);
-}
-.two>.skills-text {
-  transform: rotateZ(-25deg);
-
-}
-#first{
-  font-size: 14px;
-  line-height: 10px;
-}
-.stem {
-  height: 150px;
-  width: 3%;
-  background-color: var(--lightgreen);
-  z-index: 2;
-}
-.flower {
-  height: 100px;
-  width: 100px;
-  border: 2px solid rgb(201, 56, 113);
-  background-color: rgb(228, 121, 185);
-  border-radius: 50%;
-  z-index: 3;
-
+.projects {
+  margin-bottom: 40px;
 }
 .project {
   font-size: .9rem;
@@ -207,4 +207,9 @@ body {
 }
 .project-line{
   width: 40%;
+}
+#github-header{
+  text-align: center;
+  border-bottom: 2px solid rgb(130, 164, 74);
+  margin-bottom: 40px;
 }
