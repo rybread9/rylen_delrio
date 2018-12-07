@@ -34,13 +34,13 @@ a {
   color: var(--cream);
 }
 /*----- FLEX COLUMNS ----- */
-.main, .logo, .about {
+.main, .logo, .about, .about-skills{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 /*----- FLEX ROWS -----*/
-.nav, #nav-logo, .link, .top, .second, .third, .about-content, .projects {
+.nav, #nav-logo, .link, .top, .second, .skill, .third, .about-content, .projects {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -102,30 +102,33 @@ a {
   margin: 40px 0;
 }
 .second{
-  padding: 30px;
+  /* padding: 30px; */
+  height: 20%;
+  width: 70%;
+  padding-bottom: 30px;
 }
 .third{
-  padding: 30px;
+  padding: 30px 60px;
   background-color: rgb(28, 31, 29);
 }
-.about {
-  height: 270px;
+.about-skills{
+  padding-right: 30px;
+}
+.skill {
+  padding: 10px;
   width: 100%;
-  padding-top: 60px;
+  justify-content: flex-start;
 }
-.about-header{
-  text-align: center;
-  border-bottom: 1px solid var(--lightgreen);
-  margin-bottom: 20px;
-
-}
-.about-skills, .about-img {
-  height: 45%;
-  width: 50%;
-  padding: 15px;
-}
-.about-skills>p{
+.skill>p{
   color: var(--cream);
+  text-align: left;
+  margin-left: 15px;
+}
+.skill>img{
+  height: 32px;
+  width: 32px;
+  margin: 0;
+  padding: 0;
 }
 .about-img {
   /* height: 250px; */
@@ -153,7 +156,10 @@ a {
   width: 50%;
   text-align: center;
   font-size: 24px;
-
+}
+.socialmedia{
+  height: 50px;
+  width: 50px;
 }
 /*----- PROJECTS PAGE -----*/
 .projects-header{
