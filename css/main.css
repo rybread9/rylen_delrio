@@ -35,13 +35,13 @@ a {
   color: var(--cream);
 }
 /*----- FLEX COLUMNS ----- */
-.main, .logo, .about, .about-skills, .projects, .fourth{
+.main, .logo, .link, .about, .about-skills, .projects, .fourth{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 /*----- FLEX ROWS -----*/
-.nav, #nav-logo, .link, .top, .second, .skill, .third, .projects, .about-content{
+.nav, #nav-logo, .top, .second, .skill, .third, .projects, .about-content{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -63,7 +63,7 @@ a {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0 auto;
   padding: 0;
-  height: 55px;
+  height: 8.5%;
   position: fixed;
   width: 100%;
   z-index: 6;
@@ -72,11 +72,9 @@ a {
 }
 .link {
   background-color: var(--lightgreen);
-  /* height: 60px; */
-  width: 25%;
+  width: 20%;
   text-align: center;
   justify-content: center;
-  padding-top: 1.3%;
   letter-spacing: 3px;
 }
 .link:hover{
@@ -93,37 +91,34 @@ a {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 2vw;
   color: var(--cream);
-  /* height: 100%; */
   width: 40%;
   padding: 5px;
-  padding-bottom: 5px;
 }
 #nav-logo>h2{
-  margin: 0 10px;
+  margin: 0 1vw;
 }
 #nav-logo>img{
   height: 4vw;
   width: 4vw;
   margin:0;
-  margin-left: 20px;
-  padding-bottom: 5px;
+  margin-left: 1vw;
 }
 /*----- ABOUT ME SECTION -----*/
 .top {
   height: 35%;
   width: 100%;
-  margin: 40px 0;
+  margin: 4% 0;
 }
 .second{
   /* padding: 30px; */
   height: 20%;
   width: 70%;
-  padding-bottom: 30px;
+  padding-bottom: 4%;
 }
 .third{
   margin: 0;
   width: 100%;
-  padding: 30px 30px;
+  padding: 3%;
   background-color: rgb(28, 31, 29);
 }
 .about-skills{
@@ -140,8 +135,8 @@ a {
   margin-left: 15px;
 }
 .skill>img{
-  height: 32px;
-  width: 32px;
+  height: 2vw;
+  width: 2vw;
   margin: 0;
   padding: 0;
 }
@@ -172,8 +167,8 @@ a {
   font-size: 2vw;
 }
 .socialmedia{
-  height: 50px;
-  width: 50px;
+  height: 4vw;
+  width: 4vw;
 }
 /*----- PROJECTS PAGE -----*/
 .projects-header{
