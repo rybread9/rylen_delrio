@@ -13,6 +13,7 @@
 }
 *{
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Assistant', sans-serif;
@@ -247,3 +248,4 @@ a {
 
 }
 /* Project Thumbnail inspired by @curcoder */
+/* Icons by flaticon.com */
