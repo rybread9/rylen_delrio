@@ -19,7 +19,7 @@ body {
   font-family: 'Assistant', sans-serif;
   font-weight: 200;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 2vw;
   color: var(--cream);
   background-color: #111;
 }
@@ -54,8 +54,8 @@ a {
   letter-spacing: 5px;
 }
 .logo>img{
-  height: 64px;
-  width: 64px;
+  height: 5vw;
+  width: 5vw;
   align-self: center;
 }
 /*----- NAV BAR -----*/
@@ -85,26 +85,28 @@ a {
 .link>a{
   text-decoration: none;
   color: var(--cream);
-  font-size: 22px;
+  font-size: 2vw;
 }
 #nav-logo{
   background-color: black;
   justify-content: flex-start;
   font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 22px;
+  font-size: 2vw;
   color: var(--cream);
-  /* height: 30px; */
+  /* height: 100%; */
   width: 40%;
   padding: 5px;
+  padding-bottom: 5px;
 }
 #nav-logo>h2{
   margin: 0 10px;
 }
 #nav-logo>img{
-  height: 40px;
-  width: 40px;
+  height: 4vw;
+  width: 4vw;
   margin:0;
   margin-left: 20px;
+  padding-bottom: 5px;
 }
 /*----- ABOUT ME SECTION -----*/
 .top {
@@ -159,7 +161,7 @@ a {
 .about-personal {
   color: var(--cream);
   line-height: 27px;
-  font-size: 20px;
+  font-size: 2vw;
   width: 50%;
   border-right: 1px solid var(--lightgreen);
   padding-right: 20px;
@@ -167,7 +169,7 @@ a {
 .about-contact{
   width: 50%;
   text-align: center;
-  font-size: 24px;
+  font-size: 2vw;
 }
 .socialmedia{
   height: 50px;
@@ -186,7 +188,7 @@ a {
   width: 100%;
 }
 .project {
-  font-size: 22px;
+  font-size: 2vw;
   width: 35%;
   height: 35%;
   margin: 20px;
@@ -212,7 +214,7 @@ a {
 }
 .project-title{
   font-weight: bold;
-  font-size: 16px;
+  font-size: 2vw;
   margin-top: 10px;
 }
 .project-line{
@@ -234,7 +236,7 @@ a {
   margin-bottom: 40px;
 }
 #trouble{
-  font-size: 16px;
+  font-size: 1vw;
 }
 /* ----- FOOTER ----- */
 .footer{
