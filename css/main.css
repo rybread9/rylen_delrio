@@ -106,7 +106,7 @@ a {
   margin:0;
   margin-left: 20px;
 }
-/*----- INDEX PAGE -----*/
+/*----- ABOUT ME SECTION -----*/
 .top {
   height: 35%;
   width: 100%;
@@ -243,7 +243,7 @@ a {
   padding: 1%;
   margin-top: 2%;
   text-align: center;
-  background-color: var(--darkgreen);
+  background-color: rgb(28, 31, 29);
   color: var(--cream);
   position: sticky;
   font-family: 'Montserrat Alternates', sans-serif;
