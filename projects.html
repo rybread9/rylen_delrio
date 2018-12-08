@@ -8,7 +8,7 @@
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
-    <script src="app.js" charset="utf-8"></script>
+    <script src="./js/app.js" charset="utf-8"></script>
     <!-- Include the GitHub library. -->
     <script
       src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
@@ -25,28 +25,28 @@
     <div class="header">
       <!-- nav bar -->
       <div class="nav">
-
-        <div class="link">
-          <a href="About">about</a>
-        </div>
-        <div class="link">
-          <a href="Skills">skills</a>
+        <div id="nav-logo">
+          <img src="./images/logo.png" alt="">
+          <h2>Rylen del Rio</h2>
         </div>
 
         <div class="link">
-          <a href="wor">work</a>
+          <a href="/about.html">about</a>
+        </div>
+
+
+        <div class="link">
+          <a href="/rylen_delrio/projects.html">work</a>
         </div>
 
         <div class="link">
-          <a href="Resume">resume</a>
+          <a target="_blank" href="https://resume.creddle.io/resume/g33wnyvfmco">resume</a>
         </div>
 
-        <div class="link">
-          <a href="contact">contact</a>
-        </div>
 
       </div>
 
+    </div>
 
 
     <!-- Projects -->
@@ -65,7 +65,7 @@
           <div class="project-caption">
             <h4>Built with:</h4>
             <p>HTML,</br> CSS,</br> JavaScript</p></br>
-            <a class="live-site-link" target="_blank" href="#">Live Site</a> | <a class="github-link" target="_blank" href="#">GitHub</a>
+            <a class="live-site-link" target="_blank" href="https://rybread9.github.io/trouble/trouble_app/">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/trouble">GitHub</a>
           </div>
         </div>
 
@@ -80,7 +80,7 @@
           <div class="project-caption">
             <h4>Built with:</h4>
             <p>HTML, CSS, MongoDB,</br> Express, EJS,  Node.js</p></br>
-            <a class="live-site-link" target="_blank" href="#">Live Site</a> | <a class="github-link" target="_blank" href="#">GitHub</a>
+            <a class="live-site-link" target="_blank" href="https://alpacapost.herokuapp.com/alpacapost">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/alpacapost">GitHub</a>
           </div>
         </div>
 
@@ -95,7 +95,7 @@
             <div class="project-caption">
               <h4>Built with:</h4>
               <p>HTML, CSS, React.js,</br> PostgreSQL, Ruby on Rails</br> </p></br>
-              <a class="live-site-link" target="_blank" href="#">Live Site</a> | <a class="github-link" target="_blank" href="#">GitHub</a>
+              <a class="live-site-link" target="_blank" href="https://scinotes.herokuapp.com/">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/SciNotes">GitHub</a>
           </div>
         </div>
 
@@ -109,7 +109,7 @@
           <div class="project-caption">
             <h4>Built with:</h4>
             <p>HTML, CSS, D3, MongoDB,</br> Express, EJS,  Node.js</p></br>
-            <a class="live-site-link" target="_blank" href="#">Live Site</a> | <a class="github-link" target="_blank" href="#">GitHub</a>
+            <a class="live-site-link" target="_blank" href="https://lit-sea-30634.herokuapp.com/myPlastics">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/myPlastics">GitHub</a>
           </div>
         </div>
 
@@ -119,8 +119,8 @@
     </div>
 
     <!-- calendar -->
-    <h2 id="github-header">My GitHub Activity</h2>
-    <!-- Provided by https://ionicabizau.github.io/github-calendar/example/ -->
+    <h2 id="github-header"> <img class="socialmedia" src="./images/github.png" alt=""> My GitHub Activity</h2>
+    <!-- GitHub Calendar Provided by https://ionicabizau.github.io/github-calendar/example/ -->
     <div class="calendar">
         <!-- Loading stuff -->
         Loading the data just for you.
@@ -130,63 +130,5 @@
         GitHubCalendar(".calendar", "rybread9");
     </script>
 
-    <!-- <div class="skills">
-      <div class="skills-header">
-        <h2>Technologies I Enjoy Working With</h2>
-      </div>
-      <div class="skills-content">
-
-        <div id="first" class="skill-set one">
-          <h3 class="skills-text">HTML</h3>
-          <h3 class="skills-text">CSS</h3>
-          <h3 class="skills-text">SASS</h3>
-          <h3 class="skills-text">JavaScript</h3>
-          <h3 class="skills-text">Ruby</h3>
-        </div>
-
-        <div class="animate">
-          <div class="stem">
-            <div class="flower">
-
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-set two">
-          <h3 class="skills-text">React.js</h3>
-          <h3 class="skills-text">Angular.js</h3>
-          <h3 class="skills-text">EJS</h3>
-        </div>
-
-
-
-        <div class="skill-set one">
-          <h3 class="skills-text">Ruby on Rails</h3>
-          <h3 class="skills-text">Express</h3>
-          <h3 class="skills-text">Node.js</h3>
-        </div>
-
-        <div class="animate">
-          <div class="stem">
-
-          </div>
-
-          <div class="flower">
-
-          </div>
-        </div>
-
-
-        <div class="skill-set two">
-          <h3 class="skills-text">MongoDB</h3>
-          <h3 class="skills-text">PostgreSQL</h3>
-          <h3 class="skills-text">MySQL</h3>
-          <h3 class="skills-text">D3</h3>
-        </div>
-
-
-
-      </div>
-    </div> -->
   </body>
 </html>

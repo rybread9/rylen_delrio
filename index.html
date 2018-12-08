@@ -11,7 +11,16 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
     <!-- JavaScript -->
-    <script src="app.js" charset="utf-8"></script>
+    <script src="./js/app.js" charset="utf-8"></script>
+    <!-- Include the GitHub library. -->
+    <script
+      src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
+    ></script>
+    <!-- GitHub calendar theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+    />
   </head>
   <body>
     <!-- header -->
@@ -26,27 +35,18 @@
         <div class="link">
           <a href="/about.html">about</a>
         </div>
+
+
         <div class="link">
-          <a href="Skills">skills</a>
+          <a href="/rylen_delrio/projects.html">work</a>
         </div>
 
         <div class="link">
-          <a href="wor">work</a>
+          <a target="_blank" href="https://resume.creddle.io/resume/g33wnyvfmco">resume</a>
         </div>
 
-        <div class="link">
-          <a href="Resume">resume</a>
-        </div>
-
-        <div class="link">
-          <a href="contact">contact</a>
-        </div>
 
       </div>
-
-
-
-
 
     </div>
     <!-- main -->
@@ -102,7 +102,7 @@
       <div class="third">
         <!-- PERSONAL -->
         <div class="about-personal">
-          <p>Hey there, I'm Rylen(left in photo), a web developer based in Sacramento, California. In my personal creative projects, I like to combine my natural science background and my web development skills to build websites and apps for the conservation and scientist communities. Professionally, I love to collaborate and am always looking for new opportunities to learn from others. Let's work on something together! Drop me a line. </br>
+          <p>Hey there, I'm Rylen (left in photo), a web developer based in Sacramento, California. In my personal creative projects, I like to combine my natural science background and my web development skills to build websites and apps for the conservation and scientist communities. Professionally, I love to collaborate and am always looking for new opportunities to learn from others. Let's work on something together! Drop me a line. </br>
           </p>
         </div>
 
@@ -118,10 +118,91 @@
         </div>
       </div>
 
+      <!-- Projects -->
+
+      <div class="projects-header">
+        <h2>My Work</h2>
+      </div>
+
+      <div class="projects">
+
+          <!-- Trouble -->
+        <div class="project" id="trouble">
+          <div class="project-hover" >
+            <div class="project-title">Trouble</div>
+            <div class="project-line"></div>
+            <div class="project-caption">
+              <h4>Built with:</h4>
+              <p>HTML,</br> CSS,</br> JavaScript</p></br>
+              <a class="live-site-link" target="_blank" href="https://rybread9.github.io/trouble/trouble_app/">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/trouble">GitHub</a>
+            </div>
+          </div>
+
+          <img class="project-thumbnail" src="./images/trouble.png">
+        </div>
+
+        <!--  alpacaPost -->
+        <div class="project" id="alpacaPost">
+          <div class="project-hover">
+            <div class="project-title">alpacaPost</div>
+            <div class="project-line"></div>
+            <div class="project-caption">
+              <h4>Built with:</h4>
+              <p>HTML, CSS, MongoDB,</br> Express, EJS,  Node.js</p></br>
+              <a class="live-site-link" target="_blank" href="https://alpacapost.herokuapp.com/alpacapost">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/alpacapost">GitHub</a>
+            </div>
+          </div>
+
+          <img class="project-thumbnail" src="./images/alpacapost.png">
+        </div>
+
+        <!-- SciNotes -->
+        <div class="project" id="SciNotes">
+          <div class="project-hover" >
+            <div class="project-title">SciNotes</div>
+              <div class="project-line"></div>
+              <div class="project-caption">
+                <h4>Built with:</h4>
+                <p>HTML, CSS, React.js,</br> PostgreSQL, Ruby on Rails</br> </p></br>
+                <a class="live-site-link" target="_blank" href="https://scinotes.herokuapp.com/">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/SciNotes">GitHub</a>
+            </div>
+          </div>
+
+          <img class="project-thumbnail" src="./images/scinotes.png">
+        </div>
+        <!-- myPlastics -->
+        <div class="project" id="myPlastics">
+          <div class="project-hover" >
+            <div class="project-title">myPlastics</div>
+            <div class="project-line"></div>
+            <div class="project-caption">
+              <h4>Built with:</h4>
+              <p>HTML, CSS, D3, MongoDB,</br> Express, EJS,  Node.js</p></br>
+              <a class="live-site-link" target="_blank" href="https://lit-sea-30634.herokuapp.com/myPlastics">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/myPlastics">GitHub</a>
+            </div>
+          </div>
+
+          <img class="project-thumbnail" src="./images/myplastics.png">
+        </div>
+
+      </div>
+
+      <!-- calendar -->
+      <h2 id="github-header"> <img class="socialmedia" src="./images/github.png" alt=""> My GitHub Activity</h2>
+      <!-- GitHub Calendar Provided by https://ionicabizau.github.io/github-calendar/example/ -->
+      <div class="calendar">
+          <!-- Loading stuff -->
+          Loading the data just for you.
+      </div>
+
+      <script>
+          GitHubCalendar(".calendar", "rybread9");
+      </script>
+
     </div>
     <!-- footer -->
     <div class="footer">
-
+      <h5>Created by <a target="_blank" href="https://github.com/rybread9">Rylen del Rio.</a> </h5>
     </div>
   </body>
 </html>
