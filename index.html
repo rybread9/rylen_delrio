@@ -33,12 +33,16 @@
         </div>
 
         <div class="link">
-          <a href="/about.html">about</a>
+          <a class="aboutMeLink" href="#aboutMe">about</a>
+        </div>
+
+        <div class="link">
+          <a class="contactLink" href="#contact">contact</a>
         </div>
 
 
         <div class="link">
-          <a href="/rylen_delrio/projects.html">work</a>
+          <a class="projectsLink" href="#projects">work</a>
         </div>
 
         <div class="link">
@@ -53,7 +57,7 @@
     <div class="main">
 
       <!-- FIRST SECTION -->
-      <div class="top">
+      <div id="aboutMe" class="top">
         <!-- LOGO -->
         <div class="logo">
           <img src="./images/logo.png" alt="">
@@ -68,8 +72,7 @@
       <!-- SECOND SECTION -->
       <div class="second">
 
-
-          <div class="about-content">
+          <div  class="about-content">
             <!-- SKILLS -->
             <div class="about-skills">
               <div class="skill">
@@ -92,7 +95,7 @@
             </div>
 
 
-            <div class="about-img">
+            <div id="contact" class="about-img">
               <img src="./images/ry_kang.jpg" alt="">
             </div>
           </div>
@@ -102,12 +105,12 @@
       <div class="third">
         <!-- PERSONAL -->
         <div class="about-personal">
-          <p>Hey there, I'm Rylen (left in photo), a web developer based in Sacramento, California. In my personal creative projects, I like to combine my natural science background and my web development skills to build websites and apps for the conservation and scientist communities. Professionally, I love to collaborate and am always looking for new opportunities to learn from others. Let's work on something together! Drop me a line. </br>
+          <p>Hey there, I'm Rylen (left in photo), a web developer based in Sacramento, California. In my personal creative projects, I like to combine my natural science background and my web development skills to build websites and apps for the conservation and scientific communities. Professionally, I love to collaborate and am always looking for new opportunities to learn from others. Let's work on something together! Drop me a line. </br>
           </p>
         </div>
 
         <!-- CONTACT-->
-        <div class="about-contact">
+        <div  class="about-contact">
           <h3>Let's Connect!</h3>
           </br>
           <p> rylen.delrio@gmail.com </p>
@@ -118,74 +121,77 @@
         </div>
       </div>
 
-      <!-- Projects -->
+      <div class="fourth">
+        <!-- Projects -->
 
-      <div class="projects-header">
-        <h2>My Work</h2>
-      </div>
-
-      <div class="projects">
-
-          <!-- Trouble -->
-        <div class="project" id="trouble">
-          <div class="project-hover" >
-            <div class="project-title">Trouble</div>
-            <div class="project-line"></div>
-            <div class="project-caption">
-              <h4>Built with:</h4>
-              <p>HTML,</br> CSS,</br> JavaScript</p></br>
-              <a class="live-site-link" target="_blank" href="https://rybread9.github.io/trouble/trouble_app/">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/trouble">GitHub</a>
-            </div>
-          </div>
-
-          <img class="project-thumbnail" src="./images/trouble.png">
+        <div id="projects" class="projects-header">
+          <h2>My Work</h2>
         </div>
 
-        <!--  alpacaPost -->
-        <div class="project" id="alpacaPost">
-          <div class="project-hover">
-            <div class="project-title">alpacaPost</div>
-            <div class="project-line"></div>
-            <div class="project-caption">
-              <h4>Built with:</h4>
-              <p>HTML, CSS, MongoDB,</br> Express, EJS,  Node.js</p></br>
-              <a class="live-site-link" target="_blank" href="https://alpacapost.herokuapp.com/alpacapost">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/alpacapost">GitHub</a>
-            </div>
-          </div>
+        <div class="projects">
 
-          <img class="project-thumbnail" src="./images/alpacapost.png">
-        </div>
-
-        <!-- SciNotes -->
-        <div class="project" id="SciNotes">
-          <div class="project-hover" >
-            <div class="project-title">SciNotes</div>
+            <!-- Trouble -->
+          <div class="project" id="trouble">
+            <div class="project-hover" >
+              <div class="project-title">Trouble</div>
               <div class="project-line"></div>
               <div class="project-caption">
                 <h4>Built with:</h4>
-                <p>HTML, CSS, React.js,</br> PostgreSQL, Ruby on Rails</br> </p></br>
-                <a class="live-site-link" target="_blank" href="https://scinotes.herokuapp.com/">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/SciNotes">GitHub</a>
+                <p>HTML,</br> CSS,</br> JavaScript</p></br>
+                <a class="live-site-link" target="_blank" href="https://rybread9.github.io/trouble/trouble_app/">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/trouble">GitHub</a>
+              </div>
             </div>
+
+            <img class="project-thumbnail" src="./images/trouble.png">
           </div>
 
-          <img class="project-thumbnail" src="./images/scinotes.png">
-        </div>
-        <!-- myPlastics -->
-        <div class="project" id="myPlastics">
-          <div class="project-hover" >
-            <div class="project-title">myPlastics</div>
-            <div class="project-line"></div>
-            <div class="project-caption">
-              <h4>Built with:</h4>
-              <p>HTML, CSS, D3, MongoDB,</br> Express, EJS,  Node.js</p></br>
-              <a class="live-site-link" target="_blank" href="https://lit-sea-30634.herokuapp.com/myPlastics">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/myPlastics">GitHub</a>
+          <!--  alpacaPost -->
+          <div class="project" id="alpacaPost">
+            <div class="project-hover">
+              <div class="project-title">alpacaPost</div>
+              <div class="project-line"></div>
+              <div class="project-caption">
+                <h4>Built with:</h4>
+                <p>HTML, CSS, MongoDB,</br> Express, EJS,  Node.js, Express-Sessions</p></br>
+                <a class="live-site-link" target="_blank" href="https://alpacapost.herokuapp.com/alpacapost">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/alpacapost">GitHub</a>
+              </div>
             </div>
+
+            <img class="project-thumbnail" src="./images/alpacapost.png">
           </div>
 
-          <img class="project-thumbnail" src="./images/myplastics.png">
-        </div>
+          <!-- SciNotes -->
+          <div class="project" id="SciNotes">
+            <div class="project-hover" >
+              <div class="project-title">SciNotes</div>
+                <div class="project-line"></div>
+                <div class="project-caption">
+                  <h4>Built with:</h4>
+                  <p>HTML, CSS, React.js,</br> PostgreSQL, Ruby on Rails</br> </p></br>
+                  <a class="live-site-link" target="_blank" href="https://scinotes.herokuapp.com/">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/SciNotes">GitHub</a>
+              </div>
+            </div>
 
+            <img class="project-thumbnail" src="./images/scinotes.png">
+          </div>
+          <!-- myPlastics -->
+          <div class="project" id="myPlastics">
+            <div class="project-hover" >
+              <div class="project-title">myPlastics</div>
+              <div class="project-line"></div>
+              <div class="project-caption">
+                <h4>Built with:</h4>
+                <p>HTML, CSS, D3, MongoDB,</br> Express, EJS,  Node.js</p></br>
+                <a class="live-site-link" target="_blank" href="https://lit-sea-30634.herokuapp.com/myPlastics">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/myPlastics">GitHub</a>
+              </div>
+            </div>
+
+            <img class="project-thumbnail" src="./images/myplastics.png">
+          </div>
+
+        </div>
       </div>
+
 
       <!-- calendar -->
       <h2 id="github-header"> <img class="socialmedia" src="./images/github.png" alt=""> My GitHub Activity</h2>
@@ -202,7 +208,7 @@
     </div>
     <!-- footer -->
     <div class="footer">
-      <h5>Created by <a target="_blank" href="https://github.com/rybread9">Rylen del Rio.</a> </h5>
+      <h5>Built and designed by <a target="_blank" href="https://github.com/rybread9">Rylen del Rio.</a> </h5>
     </div>
   </body>
 </html>

@@ -15,16 +15,16 @@
   margin: 0 auto;
 }
 body {
-  /* font-family: 'Cabin', sans-serif; */
   font-family: 'Assistant', sans-serif;
   font-weight: 200;
   margin: 0 auto;
   font-size: 20px;
   color: var(--cream);
-  background-color: black;
+  background-color: #111;
 }
 .main {
   padding-top: 50px;
+  width:100%;
 }
 h3 {
   color: var(--lightgreen);
@@ -34,13 +34,13 @@ a {
   color: var(--cream);
 }
 /*----- FLEX COLUMNS ----- */
-.main, .logo, .about, .about-skills, .projects{
+.main, .logo, .about, .about-skills, .projects, .fourth{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 /*----- FLEX ROWS -----*/
-.nav, #nav-logo, .link, .top, .second, .skill, .third, .about-content{
+.nav, #nav-logo, .link, .top, .second, .skill, .third, .projects, .about-content{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -62,22 +62,22 @@ a {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0 auto;
   padding: 0;
-  height: 40px;
+  height: 55px;
   position: fixed;
   width: 100%;
   z-index: 6;
 }
 .link {
   background-color: var(--lightgreen);
-  height: 30px;
+  /* height: 60px; */
   width: 25%;
   text-align: center;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 1.3%;
   letter-spacing: 3px;
 }
 .link:hover{
-  background-color: var(--darkgreen);
+  background-color: black;
 }
 .link>a{
   text-decoration: none;
@@ -90,7 +90,7 @@ a {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 22px;
   color: var(--cream);
-  height: 30px;
+  /* height: 30px; */
   width: 40%;
   padding: 5px;
 }
@@ -116,7 +116,9 @@ a {
   padding-bottom: 30px;
 }
 .third{
-  padding: 30px 60px;
+  margin: 0;
+  width: 100%;
+  padding: 30px 30px;
   background-color: rgb(28, 31, 29);
 }
 .about-skills{
@@ -154,11 +156,10 @@ a {
 .about-personal {
   color: var(--cream);
   line-height: 27px;
-  font-size: 24px;
+  font-size: 20px;
   width: 50%;
   border-right: 1px solid var(--lightgreen);
   padding-right: 20px;
-  /* text-align: center; */
 }
 .about-contact{
   width: 50%;
@@ -172,11 +173,12 @@ a {
 /*----- PROJECTS PAGE -----*/
 .projects-header{
   text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
   margin-bottom: 20px;
   padding-top: 60px;
 }
 .projects {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   margin-bottom: 40px;
   width: 100%;
 }
@@ -186,7 +188,7 @@ a {
   height: 35%;
   margin: 20px;
   position: relative;
-  border: 2px solid rgb(130, 164, 74);
+  border: 2px solid var(--lightgreen);
 }
 .project-thumbnail {
   width: 100%;
@@ -197,7 +199,7 @@ a {
   z-index: 5;
   display: block;
   background: black;
-  color: rgb(130, 164, 74);
+  color: var(--lightgreen);
   text-decoration: none;
   text-align: center;
   height: 100%;
@@ -228,6 +230,9 @@ a {
   font-family: 'Montserrat Alternates', sans-serif;
   margin-bottom: 40px;
 }
+#trouble{
+  font-size: 16px;
+}
 /* ----- FOOTER ----- */
 .footer{
   height: 10%;
@@ -241,3 +246,4 @@ a {
   font-family: 'Montserrat Alternates', sans-serif;
 
 }
+/* Project Thumbnail inspired by @curcoder */
