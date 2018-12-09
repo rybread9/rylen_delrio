@@ -250,21 +250,53 @@ a {
 
 }
 @media only screen and (max-width: 600px) {
+  body{
+    font-size: 4vw;
+  }
   .top, .about-content, .third, .fourth, .projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%
+    width: 90%;
+  }
+  .logo{
+    height: 50%;
+    width: 100%;
+  }
+  .logo>img{
+    height: 10vw;
+    width: 10vw;
+  }
+  .about-skills{
+    width: 90%;
+    font-size: 4vw;
+  }
+  .skill>img{
+    height: 4vw;
+    width: 4vw;
+  }
+  .about-img{
+    margin-top: 20px;
+    height: 40vw;
+    width: 49vw;
   }
   .about-personal {
     line-height: 27px;
-    font-size: 2vw;
-    width: 50%;
+    font-size: 4vw;
+    width: 90%;
     border-right: none;
     padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .about-contact{
+    font-size: 4vw;
   }
   .projects{
-    margin-left: 26%;
+    margin-right: 9%;
+  }
+  .project{
+    height: 70vw;
+    width: 80vw;
   }
   .github{
     display: none;
