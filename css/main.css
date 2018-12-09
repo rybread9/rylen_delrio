@@ -11,6 +11,9 @@
   --cream: rgb(233, 221, 189);
   --darkgreen: rgb(45, 69, 40);
 }
+
+
+
 *{
   margin: 0 auto;
   scroll-behavior: smooth;
@@ -245,6 +248,27 @@ a {
   position: sticky;
   font-family: 'Montserrat Alternates', sans-serif;
 
+}
+@media only screen and (max-width: 600px) {
+  .top, .about-content, .third, .fourth, .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%
+  }
+  .about-personal {
+    line-height: 27px;
+    font-size: 2vw;
+    width: 50%;
+    border-right: none;
+    padding-right: 0;
+  }
+  .projects{
+    margin-left: 26%;
+  }
+  .github{
+    display: none;
+  }
 }
 /* Project Thumbnail inspired by @curcoder */
 /* Icons by flaticon.com */
