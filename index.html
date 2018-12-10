@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Rylen del Rio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href=".css/images/favicon.ico" type="image/x-icon">
+
 <link rel="icon" href="./css/images/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
@@ -15,15 +14,7 @@
       crossorigin="anonymous"></script>
     <!-- JavaScript -->
     <script src="./js/app.js" charset="utf-8"></script>
-    <!-- Include the GitHub library. -->
-    <script
-      src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
-    ></script>
-    <!-- GitHub calendar theme -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
-    />
+
   </head>
   <body>
     <!-- header -->
@@ -31,7 +22,6 @@
       <!-- nav bar -->
       <div class="nav">
         <div id="nav-logo">
-          <img src="./css/images/logo.png" alt="">
           <h2>Rylen del Rio</h2>
         </div>
 
@@ -63,10 +53,12 @@
       <div id="aboutMe" class="top">
         <!-- LOGO -->
         <div class="logo">
-          <img src="./css/images/logo.png" alt="">
           <h1>Rylen del Rio</h1>
           <h3>Web Developer</h3>
-          <h4>Sacramento, CA</h4>
+          <div class="about-personal">
+            <p>I am a web developer interested in web and mobile development. </br>
+            </p>
+          </div>
         </div>
 
 
@@ -84,7 +76,7 @@
               </div>
               <div class="skill">
                 <img src="./css/images/framework.png" alt="flaticon.com">
-                <p>React.js, Angular1, EJS </p>
+                <p>ReactJS, Angular1, EJS </p>
               </div>
               <div class="skill">
                 <img src="./css/images/database.png" alt="flaticon.com">
@@ -98,31 +90,14 @@
             </div>
 
 
-            <div id="contact" class="about-img">
+            <div class="about-img">
               <img src="./css/images/ry_kang.jpg" alt="A photo of Rylen and their dog, Kanga.">
             </div>
           </div>
 
       </div>
 
-      <div class="third">
-        <!-- PERSONAL -->
-        <div class="about-personal">
-          <p>Hey there, I'm Rylen (left in photo), a web developer based in Sacramento, California. In my personal creative projects, I like to combine my natural science background and my web development skills to build websites and apps for the conservation and scientific communities. Professionally, I love to collaborate and am always looking for new opportunities to learn from others. Let's work on something together! Drop me a line. </br>
-          </p>
-        </div>
 
-        <!-- CONTACT-->
-        <div  class="about-contact">
-          <h3>Let's Connect!</h3>
-          </br>
-          <p> rylen.delrio@gmail.com </p>
-          </br>
-           <a target="_blank" href="https://github.com/rybread9"><img class="socialmedia" src="./css/images/github.png" alt="iconfinder.com"></a>
-
-          <a target="_blank" href="https://www.linkedin.com/in/rylendelrio/"><img class="socialmedia" src="./css/images/linkedin.png" alt="iconfinder.com"></a>
-        </div>
-      </div>
 
       <div class="fourth">
         <!-- Projects -->
@@ -195,26 +170,25 @@
         </div>
       </div>
 
+      <div class="third">
+        <!-- CONTACT-->
+        <div id="contact" class="about-contact">
+          <h3>Let's Connect!</h3>
+          <p>If you have any questions regarding any of my work or previous experience, please feel free to reach out.</p>
+          </br>
+          <p> rylen.delrio@gmail.com </p>
+          </br>
+           <a class="socialmedialink" target="_blank" href="https://github.com/rybread9"><img class="socialmedia" src="./css/images/github.png" alt="iconfinder.com"></a>/rybread9
 
-      <!-- calendar -->
-      <div class="github">
-        <h2 id="github-header"> <img class="socialmedia" src="./css/images/github.png" alt=""> My GitHub Activity</h2>
-        <!-- GitHub Calendar Provided by https://ionicabizau.github.io/github-calendar/example/ -->
-        <div class="calendar">
-            <!-- Loading stuff -->
-            Loading the data just for you.
+          <a class="socialmedialink" target="_blank" href="https://www.linkedin.com/in/rylendelrio/"><img class="socialmedia" src="./css/images/linkedin.png" alt="iconfinder.com"></a>/rylendelrio
         </div>
-
-        <script>
-            GitHubCalendar(".calendar", "rybread9");
-        </script>
-
       </div>
+
       </div>
 
     <!-- footer -->
     <div class="footer">
-      <h5>Built and designed by <a target="_blank" href="https://github.com/rybread9">Rylen del Rio.</a> </h5>
+      <h5>Built and designed by <a id="me" target="_blank" href="https://github.com/rybread9">Rylen del Rio.</a> </h5>
     </div>
   </body>
 </html>

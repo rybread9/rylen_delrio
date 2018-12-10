@@ -1,15 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin|Josefin+Sans');
 
-@import url('https://fonts.googleapis.com/css?family=Krub');
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:200');
-
-@import url('https://fonts.googleapis.com/css?family=Assistant:200,300,400');
 
 :root {
-  --lightgreen: rgb(130, 164, 74);
-  --cream: rgb(233, 221, 189);
-  --darkgreen: rgb(45, 69, 40);
+  --anti-flash-white: #EBF5EE;
+  --gunmetal: #283044;
+  --snow: #FCFAF9;
+  --light-cornflower-blue: #92D5E6;
 }
 
 
@@ -19,23 +14,24 @@
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Assistant', sans-serif;
+  font-family: 'Helvetica';
   font-weight: 200;
   margin: 0 auto;
-  font-size: 2vw;
-  color: var(--cream);
-  background-color: #111;
+  font-size: 1.5vw;
+  color: var(--gunmetal);
+  background-color: var(--anti-flash-white);
 }
 .main {
   padding-top: 50px;
   width:100%;
 }
-h3 {
-  color: var(--lightgreen);
-}
-
 a {
-  color: var(--cream);
+  color: var(--light-cornflower-blue);
+  font-size: 1.5vw;
+  border: 1px solid var(--light-cornflower-blue);
+  padding: 8px;
+  border-radius: 4px;
+  margin: 10px;
 }
 /*----- FLEX COLUMNS ----- */
 .main, .logo, .link, .about, .about-skills, .projects, .fourth{
@@ -52,9 +48,9 @@ a {
 /*----- LANDING PAGE LOGO -----*/
 .logo{
   text-align: center;
-  color: var(--cream);
-  font-family: 'Montserrat Alternates', sans-serif;
-  letter-spacing: 5px;
+}
+.logo>h1{
+  letter-spacing: 3px;
 }
 .logo>img{
   height: 5vw;
@@ -63,37 +59,30 @@ a {
 }
 /*----- NAV BAR -----*/
 .nav {
-  font-family: 'Josefin Sans', sans-serif;
   margin: 0 auto;
   padding: 0;
-  height: 8.5%;
+  height: 6%;
   position: fixed;
   width: 100%;
   z-index: 6;
-  border-bottom: 1px solid var(--lightgreen);
-
+  background-color: var(--anti-flash-white);
 }
 .link {
-  background-color: var(--lightgreen);
   width: 20%;
   text-align: center;
   justify-content: center;
   letter-spacing: 3px;
 }
-.link:hover{
-  background-color: black;
+.link>a:hover{
+  box-shadow: 3px 3px 6px var(--light-cornflower-blue);
 }
 .link>a{
   text-decoration: none;
-  color: var(--cream);
-  font-size: 2vw;
 }
+
 #nav-logo{
-  background-color: black;
   justify-content: flex-start;
-  font-family: 'Montserrat Alternates', sans-serif;
   font-size: 2vw;
-  color: var(--cream);
   width: 40%;
   padding: 5px;
 }
@@ -122,7 +111,6 @@ a {
   margin: 0;
   width: 100%;
   padding: 3%;
-  background-color: rgb(28, 31, 29);
 }
 .about-skills{
   padding-right: 30px;
@@ -133,7 +121,6 @@ a {
   justify-content: flex-start;
 }
 .skill>p{
-  color: var(--cream);
   text-align: left;
   margin-left: 15px;
 }
@@ -144,10 +131,8 @@ a {
   padding: 0;
 }
 .about-img {
-  /* height: 250px; */
   height: 20vw;
   width: 27vw;
-  /* justify-content: center; */
   margin: 0 auto;
 }
 .about-img>img{
@@ -157,11 +142,9 @@ a {
   border-radius: 4%;
 }
 .about-personal {
-  color: var(--cream);
   line-height: 27px;
   font-size: 2vw;
   width: 50%;
-  border-right: 1px solid var(--lightgreen);
   padding-right: 20px;
 }
 .about-contact{
@@ -173,25 +156,25 @@ a {
   height: 4vw;
   width: 4vw;
 }
+.socialmedialink{
+  border: none;
+}
 /*----- PROJECTS PAGE -----*/
 .projects-header{
   text-align: center;
-  font-family: 'Montserrat Alternates', sans-serif;
   margin-bottom: 20px;
   padding-top: 60px;
 }
 .projects {
-  /* margin: 0 auto; */
   margin-bottom: 40px;
   width: 100%;
 }
 .project {
-  font-size: 2vw;
-  width: 35%;
-  height: 35%;
+  font-size: 1vw;
+  width: 250px;
+  height: 200px;
   margin: 20px;
   position: relative;
-  border: 2px solid var(--lightgreen);
 }
 .project-thumbnail {
   width: 100%;
@@ -202,7 +185,7 @@ a {
   z-index: 5;
   display: block;
   background: black;
-  color: var(--lightgreen);
+  color: var(--anti-flash-white);
   text-decoration: none;
   text-align: center;
   height: 100%;
@@ -218,7 +201,7 @@ a {
 .project-line{
   width: 1%;
   margin: 0 auto;
-  background: rgb(130, 164, 74);
+  background: var(--cream);
   height: 1px;
   transition: .8s ease;
 }
@@ -230,7 +213,6 @@ a {
 }
 #github-header{
   text-align: center;
-  font-family: 'Montserrat Alternates', sans-serif;
   margin-bottom: 40px;
 }
 #trouble{
@@ -243,11 +225,10 @@ a {
   padding: 1%;
   margin-top: 2%;
   text-align: center;
-  background-color: rgb(28, 31, 29);
-  color: var(--cream);
   position: sticky;
-  font-family: 'Montserrat Alternates', sans-serif;
-
+}
+#me{
+  border: none;
 }
 @media only screen and (max-width: 600px) {
   body{
@@ -258,6 +239,13 @@ a {
     flex-direction: column;
     justify-content: center;
     width: 90%;
+  }
+  a{
+    font-size: 3vw;
+  }
+  #nav-logo{
+    font-size: 2vw;
+    width: 24%;
   }
   .logo{
     height: 50%;
@@ -294,10 +282,7 @@ a {
   .projects{
     margin-right: 9%;
   }
-  .project{
-    height: 70vw;
-    width: 80vw;
-  }
+
   .github{
     display: none;
   }
