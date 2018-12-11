@@ -4,7 +4,7 @@
   --anti-flash-white: #EBF5EE;
   --gunmetal: #283044;
   --snow: #FCFAF9;
-  --light-cornflower-blue: #92D5E6;
+  --light-cornflower-blue: #2895b1;
 }
 
 *{
@@ -50,6 +50,9 @@ a {
 .logo>h1{
   letter-spacing: 3px;
 }
+.logo>h3{
+  margin: 5px;
+}
 .logo>img{
   height: 5vw;
   width: 5vw;
@@ -59,7 +62,7 @@ a {
 .nav {
   margin: 0 auto;
   padding: 0;
-  height: 8%;
+  height: 60px;
   position: fixed;
   width: 100%;
   z-index: 6;
@@ -109,7 +112,6 @@ a {
 .third{
   margin: 0;
   width: 100%;
-  padding: 3%;
 }
 .about-skills{
   padding-right: 30px;
@@ -145,6 +147,7 @@ a {
   font-size: 2vw;
   width: 50%;
   padding-right: 20px;
+  letter-spacing: 1px;
 }
 .about-contact{
   width: 50%;
