@@ -62,7 +62,7 @@ a {
 .nav {
   margin: 0 auto;
   padding: 0;
-  height: 60px;
+  height: 70px;
   position: fixed;
   width: 100%;
   z-index: 6;
@@ -235,11 +235,11 @@ a {
 #me{
   border: none;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 415px) {
   body{
     font-size: 4vw;
   }
-  .top, .about-content, .third, .fourth, .projects {
+  .top, .logo, .about-content, .third, .fourth, .projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,15 +251,21 @@ a {
   #nav-logo{
     margin-top: 10px;
     font-size: 2vw;
-    width: 24%;
+    width: 23%;
+  }
+  .link{
+    width: 16%;
+    letter-spacing: 1px;
+    margin-right: 20px;
+
+  }
+  .link>a{
+    border: none;
+    font-size: 3vw;
   }
   .logo{
     height: 50%;
     width: 100%;
-  }
-  .logo>img{
-    height: 10vw;
-    width: 10vw;
   }
   .about-skills{
     width: 90%;
@@ -294,9 +300,7 @@ a {
   .project-caption{
     font-size: 3vw;
   }
-  .github{
-    display: none;
-  }
+
 }
 /* Project Thumbnail inspired by @curcoder */
 /* Icons by flaticon.com */
