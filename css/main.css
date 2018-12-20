@@ -223,12 +223,15 @@ h1,h2,h3,h4{
   margin-top: 10px;
   text-decoration: underline;
 }
-.one{
+.line {
+  height: 1px;
+  width: 40%;
+  background-color: var(--light-cornflower-blue);
+}
+/* .one{
   background-color: var(--mediumgrey);
-}
-.two {
+} */
 
-}
 /* .project-hover{
   position: absolute;
   z-index: 5;
