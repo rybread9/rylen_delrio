@@ -5,6 +5,9 @@
   --gunmetal: #283044;
   --snow: #FCFAF9;
   --light-cornflower-blue: #2895b1;
+  --lightgrey: #DADADA;
+  --mediumgrey: #B0B0B0;
+  --darkgrey: #8C8C8C;
 }
 
 *{
@@ -16,12 +19,13 @@ body {
   font-weight: 200;
   margin: 0 auto;
   font-size: 1.5vw;
-  color: var(--gunmetal);
-  background-color: var(--anti-flash-white);
+  color: var(--light-cornflower-blue);
+  background-color: var(--lightgrey);
 }
 .main {
   padding-top: 50px;
-  width:100%;
+  width: 100%;
+  margin: 0 auto;
 }
 a {
   color: var(--light-cornflower-blue);
@@ -31,33 +35,22 @@ a {
   border-radius: 4px;
   margin: 10px;
 }
+h1,h2,h3,h4{
+  font-weight: 200;
+}
 /*----- FLEX COLUMNS ----- */
-.main, .logo, .link, .about, .about-skills, .projects, .fourth{
+.main, .logo, .link, .about, .about-skills, .projects{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 /*----- FLEX ROWS -----*/
-.nav, #nav-logo, .top, .second, .skill, .third, .projects, .about-content{
+.nav, #nav-logo, .second, .skill, .third, .project, .about-content{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/*----- LANDING PAGE LOGO -----*/
-.logo{
-  text-align: center;
-}
-.logo>h1{
-  letter-spacing: 3px;
-}
-.logo>h3{
-  margin: 5px;
-}
-.logo>img{
-  height: 5vw;
-  width: 5vw;
-  align-self: center;
-}
+
 /*----- NAV BAR -----*/
 .nav {
   margin: 0 auto;
@@ -65,15 +58,15 @@ a {
   height: 70px;
   position: fixed;
   width: 100%;
-  z-index: 6;
-  background-color: var(--anti-flash-white);
+  z-index: 1;
+  background-color: var(--lightgrey);
 }
 .link {
   width: 20%;
   text-align: center;
   justify-content: center;
   letter-spacing: 3px;
-  margin-top: 8px;
+
 }
 .link>a:hover{
   box-shadow: 3px 3px 6px var(--light-cornflower-blue);
@@ -90,18 +83,40 @@ a {
 }
 #nav-logo>h2{
   margin: 0 1vw;
+  font-weight: 200;
 }
-#nav-logo>img{
-  height: 4vw;
-  width: 4vw;
-  margin:0;
-  margin-left: 1vw;
-}
+
 /*----- ABOUT ME SECTION -----*/
+
 .top {
-  height: 35%;
+  background-image: url('./images/sutter_buttes.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
   width: 100%;
-  margin: 4% 0;
+  margin: 2% 0;
+  justify-content: center;
+  font-family: 'Helvetica';
+  text-align: center;
+  padding-top: 10%;
+  color: var(--light-cornflower-blue);
+}
+.top>h1{
+  letter-spacing: 3px;
+  font-size: 4vw;
+  font-weight: 200;
+}
+.top>h3{
+  margin: 5px;
+  font-size: 3vw;
+  font-weight: 200;
+}
+/*----- LANDING PAGE LOGO -----*/
+.logo{
+  text-align: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
 }
 .second{
   /* padding: 30px; */
@@ -109,11 +124,19 @@ a {
   width: 70%;
   padding-bottom: 4%;
 }
+.second-outer{
+  background-color: var(--darkgrey);
+  width: 100%;
+  padding-top: 40px;
+}
 .third{
   margin: 0;
+  padding: 20px 0;
   width: 100%;
+  background-color: var(--darkgrey);
 }
 .about-skills{
+  color: var(--gunmetal);
   padding-right: 30px;
 }
 .skill {
@@ -144,7 +167,7 @@ a {
 }
 .about-personal {
   line-height: 27px;
-  font-size: 2vw;
+  font-size: 1.5vw;
   width: 50%;
   padding-right: 20px;
   letter-spacing: 1px;
@@ -152,7 +175,8 @@ a {
 .about-contact{
   width: 50%;
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.5vw;
+  color: var(--gunmetal);
 }
 .socialmedia{
   height: 4vw;
@@ -168,24 +192,44 @@ a {
   padding-top: 60px;
 }
 .projects {
+  background-color: var(--lightgrey);
+  color: var(--gunmetal);
   margin-bottom: 40px;
   width: 100%;
+  flex-wrap: wrap;
 }
 .project {
-  font-size: 1vw;
-  width: 250px;
-  height: 200px;
-  margin: 20px;
-  position: relative;
+  font-size: 1.5vw;
+  width: 100%;
+  height: inherit;
+  margin: 20px 0;
+  padding: 20px 0;
+  justify-content: space-around;
+
 }
 .project-caption>a{
   font-size: 1.5vw;
 }
 .project-thumbnail {
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 350px;
 }
-.project-hover{
+.project-details{
+  width: 20%;
+  text-align: center;
+}
+.project-title{
+  font-size: 2vw;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.one{
+  background-color: var(--mediumgrey);
+}
+.two {
+
+}
+/* .project-hover{
   position: absolute;
   z-index: 5;
   display: block;
@@ -198,11 +242,7 @@ a {
   opacity: 0;
   transition: all .3s ease-in;
 }
-.project-title{
-  font-weight: bold;
-  font-size: 2vw;
-  margin-top: 10px;
-}
+
 .project-line{
   width: 1%;
   margin: 0 auto;
@@ -215,14 +255,9 @@ a {
 }
 .project-line{
   width: 40%;
-}
-#github-header{
-  text-align: center;
-  margin-bottom: 40px;
-}
-#trouble{
-  font-size: 1vw;
-}
+} */
+
+
 /* ----- FOOTER ----- */
 .footer{
   height: 10%;
@@ -263,6 +298,10 @@ a {
     border: none;
     font-size: 3vw;
   }
+  .link>a:hover{
+    font-size: 3.5vw;
+    box-shadow: none;
+  }
   .logo{
     height: 50%;
     width: 100%;
@@ -291,9 +330,9 @@ a {
   .about-contact{
     font-size: 4vw;
   }
-  .projects{
+  /* .projects{
     margin-right: 2%;
-  }
+  } */
   .project-title{
     font-size: 4vw;
   }

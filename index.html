@@ -50,52 +50,55 @@
     <div class="main">
 
       <!-- FIRST SECTION -->
-      <div id="aboutMe" class="top">
-        <!-- LOGO -->
-        <div class="logo">
-          <h1>Rylen del Rio</h1>
-          <h3>Web Developer</h3>
-          <div class="about-personal">
-            <p>I am a web developer interested in web and mobile development. </br>
-            </p>
-          </div>
+      <div class="top">
+        <h1>Rylen del Rio</h1>
+        <h3>Full-stack Web Developer</h3>
+      </div>
+
+      <!-- LOGO -->
+      <div id="aboutMe" class="logo">
+
+        <div class="about-personal">
+          <p>As a curious and imaginative thinker I practice patience and careful preparation for finding solid, well thought-out solutions. My problem-solving strategy and skills in web development are driven by my excitement for a challenge.</br>
+          </p>
         </div>
-
-
       </div>
 
       <!-- SECOND SECTION -->
-      <div class="second">
+      <div class="second-outer">
+        <div class="second">
 
-          <div  class="about-content">
-            <!-- SKILLS -->
-            <div class="about-skills">
-              <div class="skill">
-                <img src="./css/images/language.png" alt="flaticon.com">
-                <p>JavaScript, Ruby, HTML, CSS </p>
-              </div>
-              <div class="skill">
-                <img src="./css/images/framework.png" alt="flaticon.com">
-                <p>ReactJS, Angular1, EJS </p>
-              </div>
-              <div class="skill">
-                <img src="./css/images/database.png" alt="flaticon.com">
-                <p>MongoDB, PostgreSQL, MySQL, D3</p>
-              </div>
-              <div class="skill">
-                <img src="./css/images/cms.png" alt="flaticon.com">
-                <p>Git, Ruby on Rails, Express, Node.js, SASS</p>
+            <div  class="about-content">
+              <!-- SKILLS -->
+              <div class="about-skills">
+                <div class="skill">
+                  <img src="./css/images/language.png" alt="flaticon.com">
+                  <p>JavaScript, Ruby, HTML, CSS </p>
+                </div>
+                <div class="skill">
+                  <img src="./css/images/framework.png" alt="flaticon.com">
+                  <p>ReactJS, Angular1, EJS </p>
+                </div>
+                <div class="skill">
+                  <img src="./css/images/database.png" alt="flaticon.com">
+                  <p>MongoDB, PostgreSQL, MySQL, D3</p>
+                </div>
+                <div class="skill">
+                  <img src="./css/images/cms.png" alt="flaticon.com">
+                  <p>Git, Ruby on Rails, Express, Node.js, SASS</p>
+                </div>
+
               </div>
 
+
+              <div class="about-img">
+                <img src="./css/images/ry_kang.jpg" alt="A photo of Rylen and their dog, Kanga.">
+              </div>
             </div>
 
-
-            <div class="about-img">
-              <img src="./css/images/ry_kang.jpg" alt="A photo of Rylen and their dog, Kanga.">
-            </div>
-          </div>
-
+        </div>
       </div>
+
 
 
 
@@ -109,28 +112,28 @@
         <div class="projects">
 
             <!-- Trouble -->
-          <div class="project" id="trouble">
-            <div class="project-hover" >
-              <div class="project-title">Trouble</div>
-              <div class="project-line"></div>
-              <div class="project-caption">
-                <h4>Built with:</h4>
-                <p>HTML,</br> CSS,</br> JavaScript</p></br>
-                <a class="live-site-link" target="_blank" href="https://rybread9.github.io/trouble/trouble_app/">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/trouble">GitHub</a>
+            <div class="project one" id="trouble">
+              <div class="project-details">
+                <div class="project-title">Trouble</div></br>
+                <div class="project-line"></div>
+                <div class="project-caption">
+                  <p><strong>Built with: </strong>HTML, CSS, JavaScript</p></br>
+                  <p>Trouble is a two-player digital boardgame in which players roll dice to move their tokens along a path.</p></br>
+                  <a class="live-site-link" target="_blank" href="https://rybread9.github.io/trouble/trouble_app/">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/trouble">GitHub</a>
+                </div>
               </div>
+
+              <img class="project-thumbnail" src="./css/images/trouble.png">
             </div>
 
-            <img class="project-thumbnail" src="./css/images/trouble.png">
-          </div>
-
           <!--  alpacaPost -->
-          <div class="project" id="alpacaPost">
-            <div class="project-hover">
-              <div class="project-title">alpacaPost</div>
+          <div class="project two" id="alpacaPost">
+            <div class="project-details">
+              <div class="project-title">alpacaPost</div></br>
               <div class="project-line"></div>
               <div class="project-caption">
-                <h4>Built with:</h4>
-                <p>HTML, CSS, MongoDB,</br> Express, EJS,  Node.js, Express-Sessions</p></br>
+                <p><strong>Built with: </strong>HTML, CSS, MongoDB, Express, EJS,  Node.js, Express-Sessions</p></br>
+                <p>alpacaPost is a full CRUD postcard catalog.</p></br>
                 <a class="live-site-link" target="_blank" href="https://alpacapost.herokuapp.com/alpacapost">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/alpacapost">GitHub</a>
               </div>
             </div>
@@ -139,13 +142,13 @@
           </div>
 
           <!-- SciNotes -->
-          <div class="project" id="SciNotes">
-            <div class="project-hover" >
-              <div class="project-title">SciNotes</div>
+          <div class="project one" id="SciNotes">
+            <div class="project-details" >
+              <div class="project-title">SciNotes</div></br>
                 <div class="project-line"></div>
                 <div class="project-caption">
-                  <h4>A Mobile App Built with:</h4>
-                  <p>HTML, CSS, React.js,</br> PostgreSQL, Ruby on Rails</br> </p></br>
+                  <p><strong>A Mobile App Built with: </strong>HTML, CSS, React.js, PostgreSQL, Ruby on Rails </p></br>
+                  <p>With an attempt to bridge the gap between web development and scientific exploration, SciNotes is a platform that makes recording data easier and more efficient.</p></br>
                   <a class="live-site-link" target="_blank" href="https://scinotes.herokuapp.com/">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/SciNotes">GitHub</a>
               </div>
             </div>
@@ -153,13 +156,13 @@
             <img class="project-thumbnail" src="./css/images/scinotes.png">
           </div>
           <!-- myPlastics -->
-          <div class="project" id="myPlastics">
-            <div class="project-hover" >
-              <div class="project-title">myPlastics</div>
+          <div class="project two" id="myPlastics">
+            <div class="project-details" >
+              <div class="project-title">myPlastics</div></br>
               <div class="project-line"></div>
               <div class="project-caption">
-                <h4>Built with:</h4>
-                <p>HTML, CSS, D3, MongoDB,</br> Express, EJS,  Node.js</p></br>
+                <h4><strong>Built with: </strong>HTML, CSS, D3, MongoDB, Express, EJS,  Node.js</p></br>
+                <p>This app is meant to encourage users to make conscious decisions regarding their consumption of plastic materials.</p></br>
                 <a class="live-site-link" target="_blank" href="https://lit-sea-30634.herokuapp.com/myPlastics">Live Site</a> | <a class="github-link" target="_blank" href="https://github.com/rybread9/myPlastics">GitHub</a>
               </div>
             </div>
@@ -176,7 +179,7 @@
           <h3>Let's Connect!</h3>
           <p>If you have any questions regarding any of my work or previous experience, please feel free to reach out.</p>
           </br>
-          <p> rylen.delrio@gmail.com </p>
+          <h4> rylen.delrio@gmail.com </h4>
           </br>
            <a class="socialmedialink" target="_blank" href="https://github.com/rybread9"><img class="socialmedia" src="./css/images/github.png" alt="iconfinder.com"></a>/rybread9
          </br>
