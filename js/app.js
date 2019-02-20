@@ -1,7 +1,3 @@
-// console.log("hello");
-// console.log($);
-
-
 $(()=>{
 
   $('.aboutMeLink').click(()=>{
